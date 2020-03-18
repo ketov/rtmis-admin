@@ -1,0 +1,131 @@
+doctype html
+html
+    head
+        title Развитие продуктов | Изменения
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8") 
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(content='true' name='HandheldFriendly')
+        meta(content='width' name='MobileOptimized')
+        meta(content='yes' name='apple-mobile-web-app-capable')
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext")
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+
+    body
+        header
+            .container
+                img(src="assets/img/logo.svg" alt="Логотип РТ МИС")
+
+        nav            
+            .container
+                div.col-md-12.row
+                    div.nav-actions
+                        ul.nav.nav-tabs.border-0.flex-column.flex-lg-row
+                            li.nav-item
+                                a.nav-link.active(href="javascript:void(0);")
+                                    i.fe.fe-github
+                                    | Развитие продуктов
+                            li.nav-item
+                                a.nav-link(href="training-center.html")
+                                    i.fe.fe-monitor
+                                    | Учебный центр
+                            li.nav-item
+                                a.nav-link(href="menu.html")
+                                    i.fe.fe-list
+                                    | Меню
+                            li.nav-item
+                                a.nav-link(href="notification.html")
+                                    i.fe.fe-alert-circle
+                                    | Уведомление
+                            li.nav-item
+                                a.nav-link(href="auth-header.html")
+                                    i.fe.fe-type
+                                    | Заголовок формы авторизации
+                            li.nav-item.logout
+                                a.nav-link(href="javascript:void(0);")
+                                    i.fe.fe-log-out
+                                    | Выход
+
+        .my-3.my-md-5
+            .container
+                .row
+                    .col-md-3.left-menu
+                        .list-group
+                            a.list-group-item.list-group-item-action.d-flex.align-items-center.active(href="javascript:void(0);")
+                                span.icon.mr-3
+                                    i.fe.fe-git-pull-request
+                                | Изменения
+                            a.list-group-item.list-group-item-action.d-flex.align-items-center(href="tags.html")
+                                span.icon.mr-3
+                                    i.fe.fe-hash
+                                | Теги
+
+                    .col-md-9
+                        h3 Изменения
+                        div.card
+                            .table-responsive.table-responsive--rtmis
+                                div#DataTables_Table_0_wrapper.dataTables_wrapper.no-footer
+                                    table.table.table-hover.table-outline.table-vcenter.card-table
+                                        thead
+                                            th Дата
+                                            th Событие
+                                            th.add-button-th
+                                                a.dropdown-item(href="edit-changes.html" title="Добавить")
+                                                    i.dropdown-icon.fe.fe-plus    
+                                        tbody
+                                            tr
+                                                td.text-nowrap 23 октября 2019
+                                                td.gradient
+                                                    b Поликлинические случаи лечения
+                                                    p 
+                                                        | Реализована возможность уточнить объем оказания услуг 
+                                                        | для&nbsp;случаев медицинской помощи в&nbsp;кабинетах раннего выявления заболеваний. 
+                                                        | Для&nbsp;этого на&nbsp;формы «Выполнение общей услуги» и&nbsp;«Выполнение операции» 
+                                                        | в&nbsp;разделе «Услуги» добавлена кнопка «Уточнить объем выполнения».
+                                                td.actions
+                                                    a.dropdown-item(href="javascript:void(0)" title="Удалить")
+                                                        i.dropdown-icon.fe.fe-trash
+                                                    a.dropdown-item(href="edit-changes.html" title="Редактировать")
+                                                        i.dropdown-icon.fe.fe-edit-2
+                                            tr
+                                                td.text-nowrap 14 августа 2019
+                                                td.gradient
+                                                    b Поликлинические случаи лечения
+                                                    p 
+                                                        | Доработана форма поиска ТАП. 
+                                                        | На&nbsp;вкладке «2.&nbsp;Пациент (доп.)» добавлены поля фильтра 
+                                                        | «Гражданство» и&nbsp;«Страна». Поле фильтра «Страна» отображается, 
+                                                        | если в&nbsp;поле «Гражданство» выбрано значение «Иное».
+                                                td.actions
+                                                    a.dropdown-item(href="javascript:void(0)" title="Удалить")
+                                                        i.dropdown-icon.fe.fe-trash
+                                                    a.dropdown-item(href="edit-changes.html" title="Редактировать")
+                                                        i.dropdown-icon.fe.fe-edit-2
+                                            tr
+                                                td.text-nowrap 13 июня 2019
+                                                td.gradient
+                                                    b Поликлинические и стоматологические случаи лечения
+                                                    p 
+                                                        | Доработаны формы поиска поликлинических и&nbsp;стоматологических случаев лечения.
+                                                    ul
+                                                        li В&nbsp;поле «Характер заболевания» доступны значения, соответствующие федеральному справочнику V027.
+                                                        li Для корректного формирования реестров счетов сопутствующий диагноз не должен.
+                                                td.actions
+                                                    a.dropdown-item(href="javascript:void(0)" title="Удалить")
+                                                        i.dropdown-icon.fe.fe-trash
+                                                    a.dropdown-item(href="edit-changes.html" title="Редактировать")
+                                                        i.dropdown-icon.fe.fe-edit-2                        
+
+                                    div.dataTables_info#DataTables_Table_0_info(role="status" aria-live="polite") 1 — 10 из 32 записей
+                                    div.dataTables_paginate.paging_simple_numbers#DataTables_Table_0_paginate
+                                        a.paginate_button.previous.disabled(aria-controls="DataTables_Table_0" data-dt-idx="0" tabindex="0" id="DataTables_Table_0_previous") Предыдущая
+                                        a.paginate_button.current(aria-controls="DataTables_Table_0" data-dt-idx="1" tabindex="0" href="#") 1
+                                        a.paginate_button(aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" href="#") 2
+                                        a.paginate_button(aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" href="#") 3
+                                        a.paginate_button(aria-controls="DataTables_Table_0" data-dt-idx="2" tabindex="0" href="#") 4
+                                        a.paginate_button.next(aria-controls="DataTables_Table_0" data-dt-idx="3" tabindex="0") Следующая
+
+                    
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="assets/js/app.min.js")

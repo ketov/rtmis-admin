@@ -1,0 +1,101 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Summernote
+    link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+    link(href='https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+    link(href='https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.css', rel='stylesheet')
+    script(src='https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js')
+
+    title Развитие продуктов | Изменения
+    meta(name="description", content="")
+    meta(name="keywords", content="")
+    meta(charset="UTF-8") 
+    meta(name='viewport' content='width=device-width,initial-scale=1')
+    meta(content='true' name='HandheldFriendly')
+    meta(content='width' name='MobileOptimized')
+    meta(content='yes' name='apple-mobile-web-app-capable')
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext")
+    style
+        include ../styles/blocks/edit-changes.scss
+
+ 
+header
+    .container
+        img(src="assets/img/logo.svg" alt="Логотип РТ МИС")
+
+nav            
+    .container
+        div.col-md-12.row
+            div.nav-actions
+                ul.nav.nav-tabs.border-0.flex-column.flex-lg-row
+                    li.nav-item
+                        a.nav-link.active.cursor(href="index.html")
+                            i.fe.fe-github
+                            | Развитие продуктов
+                    li.nav-item
+                        a.nav-link(href="training-center.html")
+                            i.fe.fe-monitor
+                            | Учебный центр
+                    li.nav-item
+                        a.nav-link(href="menu.html")
+                            i.fe.fe-list
+                            | Меню
+                    li.nav-item
+                        a.nav-link(href="notification.html")
+                            i.fe.fe-alert-circle
+                            | Уведомление
+                    li.nav-item
+                        a.nav-link(href="auth-header.html")
+                            i.fe.fe-type
+                            | Заголовок формы авторизации
+                    li.nav-item.logout
+                        a.nav-link(href="javascript:void(0);")
+                            i.fe.fe-log-out
+                            | Выход
+
+.my-3.my-md-5
+    .container
+        .row
+            .col-md-9
+                h3 Редактирование изменения
+                #summernote
+                    p Поликлинические случаи лечения
+
+
+                h4 Теги
+                .form-group
+                    label.custom-control.custom-checkbox
+                        input.custom-control-input(type="checkbox" name="" value="" checked)
+                        span.custom-control-label АРМ врача поликлиники
+                .form-group
+                    label.custom-control.custom-checkbox
+                        input.custom-control-input(type="checkbox" name="" value="")
+                        span.custom-control-label АРМ врача стационара
+                .form-group
+                    label.custom-control.custom-checkbox
+                        input.custom-control-input(type="checkbox" name="" value="")
+                        span.custom-control-label АРМ диагностики
+                .form-group
+                    label.custom-control.custom-checkbox
+                        input.custom-control-input(type="checkbox" name="" value="")
+                        span.custom-control-label АРМ лаборанта
+                .form-group
+                    label.custom-control.custom-checkbox
+                        input.custom-control-input(type="checkbox" name="" value="")
+                        span.custom-control-label АРМ медицинского статиста
+                .form-group
+                    label.custom-control.custom-checkbox
+                        input.custom-control-input(type="checkbox" name="" value="")
+                        span.custom-control-label АРМ стоматолога
+
+                hr
+
+        .row
+            .col-md-9
+                .d-flex
+                    button.btn.btn-primary.ml-auto(type="submit") Сохранить
+
+script(src="assets/js/app.min.js")

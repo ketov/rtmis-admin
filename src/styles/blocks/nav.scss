@@ -1,0 +1,42 @@
+nav{
+    border-bottom: 1px solid #d5e1ec;
+    padding-top: 20px;
+    .container{
+        .col-md-12{
+            margin: 0;
+        }
+    }
+}
+
+.nav-actions{
+    width: 100%;
+    .nav-tabs {
+        .nav-item{
+            margin-right: 28px;
+            padding: 0;
+            a{
+                transition: 0.2s ease;
+            }
+            &:hover{
+                a{
+                    border-bottom: 1px solid $blue;
+                    color: $blue;
+                }
+            }
+        }
+        .nav-link{
+            padding: 10px 0;
+            a{
+                border-bottom: none !important;
+            }
+        }
+        .nav-link.active{
+            cursor: default;
+        }
+    }
+
+    .logout{
+        position: absolute;
+        right: 0;
+    }
+}

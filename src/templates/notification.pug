@@ -1,0 +1,64 @@
+doctype html
+html
+    head
+        title Уведомление
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8") 
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(content='true' name='HandheldFriendly')
+        meta(content='width' name='MobileOptimized')
+        meta(content='yes' name='apple-mobile-web-app-capable')
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap")
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+
+    body
+        header
+            .container
+                img(src="assets/img/logo.svg" alt="Логотип РТ МИС")
+
+        nav            
+            .container
+                div.col-md-12.row
+                    div.nav-actions
+                        ul.nav.nav-tabs.border-0.flex-column.flex-lg-row
+                            li.nav-item
+                                a.nav-link(href="index.html")
+                                    i.fe.fe-github
+                                    | Развитие продуктов
+                            li.nav-item
+                                a.nav-link(href="training-center.html")
+                                    i.fe.fe-monitor
+                                    | Учебный центр
+                            li.nav-item
+                                a.nav-link(href="menu.html")
+                                    i.fe.fe-list
+                                    | Меню
+                            li.nav-item
+                                a.nav-link.active(href="javascript:void(0);")
+                                    i.fe.fe-alert-circle
+                                    | Уведомление
+                            li.nav-item
+                                a.nav-link(href="auth-header.html")
+                                    i.fe.fe-type
+                                    | Заголовок формы авторизации
+                            li.nav-item.logout
+                                a.nav-link(href="javascript:void(0);")
+                                    i.fe.fe-log-out
+                                    | Выход
+
+        .container
+            h3.rtmis-pageheader.rtmis-pageheader--marginbottom Уведомление
+            .row
+                .col-md-6
+                    .form-group
+                        label.form-label(for="notification") Уведомление
+                        textarea.form-control#notification С&nbsp;0:00 по&nbsp;2:00 по&nbsp;московскому времени будут проводиться технические работы. Некоторые функции могут быть недоступны.
+                    .form-group
+                        label.form-label(for="button-text") Текст кнопки
+                        input.form-control#button-text(type="text" value="Закрыть")   
+                    .d-flex
+                        button.btn.btn-primary.ml-auto(type="submit") Сохранить
+                
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="assets/js/app.min.js")

@@ -1,0 +1,140 @@
+doctype html
+html
+    head
+        title Меню
+        meta(name="description", content="")
+        meta(name="keywords", content="")
+        meta(charset="UTF-8") 
+        meta(name='viewport' content='width=device-width,initial-scale=1')
+        meta(content='true' name='HandheldFriendly')
+        meta(content='width' name='MobileOptimized')
+        meta(content='yes' name='apple-mobile-web-app-capable')
+        link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;subset=latin-ext")
+        link(rel="stylesheet" type="text/css" href="assets/css/all.min.css")
+
+    body
+        header
+            .container
+                img(src="assets/img/logo.svg" alt="Логотип РТ МИС")
+
+        nav            
+            .container
+                div.col-md-12.row
+                    div.nav-actions
+                        ul.nav.nav-tabs.border-0.flex-column.flex-lg-row
+                            li.nav-item
+                                a.nav-link(href="index.html")
+                                    i.fe.fe-github
+                                    | Развитие продуктов
+                            li.nav-item
+                                a.nav-link(href="training-center.html")
+                                    i.fe.fe-monitor
+                                    | Учебный центр
+                            li.nav-item
+                                a.nav-link.active(href="javascript:void(0);")
+                                    i.fe.fe-list
+                                    | Меню
+                            li.nav-item
+                                a.nav-link(href="notification.html")
+                                    i.fe.fe-alert-circle
+                                    | Уведомление
+                            li.nav-item
+                                a.nav-link(href="auth-header.html")
+                                    i.fe.fe-type
+                                    | Заголовок формы авторизации
+                            li.nav-item.logout
+                                a.nav-link(href="javascript:void(0);")
+                                    i.fe.fe-log-out
+                                    | Выход
+
+        .container
+            h3.rtmis-pageheader Меню
+            .row
+                .col-md-6
+                    div.card
+                        .table-responsive.table-responsive--rtmis
+                            div#DataTables_Table_0_wrapper.dataTables_wrapper.no-footer
+                                table.table.table-hover.table-outline.table-vcenter.card-table
+                                    thead
+                                        th Пункт меню
+                                        th Активность
+                                    tbody
+                                        tr
+                                            td.text-nowrap Электронная регистратура
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="" checked="")
+                                                    span.custom-control-label
+                                        tr
+                                            td.text-nowrap ЕРМП
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="")
+                                                    span.custom-control-label
+                                        tr
+                                            td.text-nowrap ИАС: Информационный модуль
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="")
+                                                    span.custom-control-label
+                                        tr
+                                            td.text-nowrap ИАС: Модуль мониторинга и анализа
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="")
+                                                    span.custom-control-label
+                                        tr
+                                            td.text-nowrap ИАС: Модуль отчётности
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="")
+                                                    span.custom-control-label
+                                        tr
+                                            td.text-nowrap Запись к врачу
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="")
+                                                    span.custom-control-label
+                                        tr
+                                            td.text-nowrap Сервис: Поиск льготников
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="")
+                                                    span.custom-control-label
+                                        tr
+                                            td.text-nowrap Сервис: Мониторинг здравоохранения
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="")
+                                                    span.custom-control-label
+                                        tr
+                                            td.text-nowrap Сервис: Статистика трафика
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="")
+                                                    span.custom-control-label
+                                        tr
+                                            td.text-nowrap Сервис: Управление репликацией
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="")
+                                                    span.custom-control-label
+                                        tr
+                                            td.text-nowrap Справочная служба
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="")
+                                                    span.custom-control-label
+                                        tr
+                                            td.text-nowrap Сайт РТ МИС
+                                            td
+                                                label.custom-control.custom-checkbox
+                                                    input.custom-control-input(type="checkbox" name="" value="")
+                                                    span.custom-control-label
+                                                    
+                        .d-flex                            
+                            button.btn.btn-primary.ml-auto.menu-button(type="submit") Сохранить                        
+
+                
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="assets/js/app.min.js")

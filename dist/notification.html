@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Уведомление</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta content="true" name="HandheldFriendly">
+    <meta content="width" name="MobileOptimized">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&amp;display=swap">
+    <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container"><img src="assets/img/logo.svg" alt="Логотип РТ МИС"></div>
+    </header>
+    <nav>           
+      <div class="container">
+        <div class="col-md-12 row">
+          <div class="nav-actions">
+            <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+              <li class="nav-item"><a class="nav-link" href="index.html"><i class="fe fe-github"></i>Развитие продуктов</a></li>
+              <li class="nav-item"><a class="nav-link" href="training-center.html"><i class="fe fe-monitor"></i>Учебный центр</a></li>
+              <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fe fe-list"></i>Меню</a></li>
+              <li class="nav-item"><a class="nav-link active" href="javascript:void(0);"><i class="fe fe-alert-circle"></i>Уведомление</a></li>
+              <li class="nav-item"><a class="nav-link" href="auth-header.html"><i class="fe fe-type"></i>Заголовок формы авторизации</a></li>
+              <li class="nav-item logout"><a class="nav-link" href="javascript:void(0);"><i class="fe fe-log-out"></i>Выход</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <h3 class="rtmis-pageheader rtmis-pageheader--marginbottom">Уведомление</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label class="form-label" for="notification">Уведомление</label>
+            <textarea class="form-control" id="notification">С&nbsp;0:00 по&nbsp;2:00 по&nbsp;московскому времени будут проводиться технические работы. Некоторые функции могут быть недоступны.</textarea>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="button-text">Текст кнопки</label>
+            <input class="form-control" id="button-text" type="text" value="Закрыть">
+          </div>
+          <div class="d-flex">
+            <button class="btn btn-primary ml-auto" type="submit">Сохранить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+  </body>
+</html>

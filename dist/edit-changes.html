@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <title>Summernote</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script>
+  <title>Развитие продуктов | Изменения</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta content="true" name="HandheldFriendly">
+  <meta content="width" name="MobileOptimized">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,500,500i,600,600i,700,700i&amp;amp;subset=latin-ext">
+  <style>html{
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    font-size: 16px;
+    height: 100%;
+    direction: ltr;
+}
+
+body{
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+
+    background: #f5f7fb;
+    color: #1f1f1f;
+    font-family: 'Source Sans Pro',sans-serif;
+    margin: 0;
+    padding: 0 0 100px;
+    width: 100%;
+    direction: ltr;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    font-feature-settings: "liga" 0;
+    overflow-y: scroll;
+    position: relative;
+    height: 100%;
+}
+
+.container{
+    width: 100%;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.note-editor.note-frame.panel.panel-default .btn i,
+.note-editor.note-frame.panel.panel-default .dataTables_wrapper .dataTables_paginate .paginate_button i,
+.note-editor.note-frame.panel.panel-default .dataTables_wrapper .dataTables_paginate .paginate_button.current i{
+    font-size: 100%;
+}
+
+.note-editor.note-frame.panel.panel-default .dropdown-toggle::after {
+    display: none;
+}
+
+.note-editor.note-frame.panel.panel-default .note-icon-font.note-recent-color {
+    font-size: 80%;
+}
+
+.note-editable {
+    min-height: 120px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: none !important;
+}
+
+.nav-actions .nav .nav-item .nav-link:focus, .nav-actions .nav .nav-item .nav-link:hover {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+h3{
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+
+h4{
+    font-size: 105%;
+    font-weight: 600;
+}
+
+hr{
+    border-top: 1px solid rgba(0,40,100,.12);
+}
+
+.my-3, .my-md-5 {
+    margin-top: 60px;
+}
+
+.btn-primary{
+    color: #fff;
+    background-color: #0069ec;
+    border-color: #0069ec;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.84615385;
+    letter-spacing: 0.03em;
+    font-size: .95rem;
+}
+
+.form-group{
+    margin-bottom: 7px;
+}
+
+label{
+    cursor: pointer;
+    font-weight: normal;
+}
+  </style>
+</head>
+<header>
+  <div class="container"><img src="assets/img/logo.svg" alt="Логотип РТ МИС"></div>
+</header>
+<nav>           
+  <div class="container">
+    <div class="col-md-12 row">
+      <div class="nav-actions">
+        <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
+          <li class="nav-item"><a class="nav-link active cursor" href="index.html"><i class="fe fe-github"></i>Развитие продуктов</a></li>
+          <li class="nav-item"><a class="nav-link" href="training-center.html"><i class="fe fe-monitor"></i>Учебный центр</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fe fe-list"></i>Меню</a></li>
+          <li class="nav-item"><a class="nav-link" href="notification.html"><i class="fe fe-alert-circle"></i>Уведомление</a></li>
+          <li class="nav-item"><a class="nav-link" href="auth-header.html"><i class="fe fe-type"></i>Заголовок формы авторизации</a></li>
+          <li class="nav-item logout"><a class="nav-link" href="javascript:void(0);"><i class="fe fe-log-out"></i>Выход</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<div class="my-3 my-md-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <h3>Редактирование изменения</h3>
+        <div id="summernote">
+          <p>Поликлинические случаи лечения</p>
+        </div>
+        <h4>Теги</h4>
+        <div class="form-group">
+          <label class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" name="" value="" checked><span class="custom-control-label">АРМ врача поликлиники</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" name="" value=""><span class="custom-control-label">АРМ врача стационара</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" name="" value=""><span class="custom-control-label">АРМ диагностики</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" name="" value=""><span class="custom-control-label">АРМ лаборанта</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" name="" value=""><span class="custom-control-label">АРМ медицинского статиста</span>
+          </label>
+        </div>
+        <div class="form-group">
+          <label class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" name="" value=""><span class="custom-control-label">АРМ стоматолога</span>
+          </label>
+        </div>
+        <hr>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-9">
+        <div class="d-flex">
+          <button class="btn btn-primary ml-auto" type="submit">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="assets/js/app.min.js"></script>
