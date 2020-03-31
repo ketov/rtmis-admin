@@ -7,7 +7,7 @@ head
     link(href='https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.css', rel='stylesheet')
     script(src='https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js')
 
-    title Развитие продуктов | Изменения
+    title Учебный центр | Добавить событие
     meta(name="description", content="")
     meta(name="keywords", content="")
     meta(charset="UTF-8") 
@@ -30,11 +30,11 @@ nav
             div.nav-actions
                 ul.nav.nav-tabs.border-0.flex-column.flex-lg-row
                     li.nav-item
-                        a.nav-link.active.cursor(href="index.html")
+                        a.nav-link(href="index.html")
                             i.fe.fe-github
                             | Развитие продуктов
                     li.nav-item
-                        a.nav-link(href="training-center.html")
+                        a.nav-link.active.cursor(href="training-center.html")
                             i.fe.fe-monitor
                             | Учебный центр
                     li.nav-item
@@ -56,38 +56,45 @@ nav
 
 .my-3.my-md-5
     .container
-        .row
+        .row.training-center-edit__row
+            .col-md-2
+                .form-group
+                    label.form-label(for="date-from") Дата с
+                    input.form-control#date-from(type="text" data-mask="00/00/0000" placeholder="00/00/0000")
+            .col-md-2
+                .form-group
+                    label.form-label(for="time-from") Время с
+                    input.form-control#time-from(type="text" data-mask="00:00" placeholder="00:00")
+            .col-md-2
+                .form-group
+                    label.form-label(for="date-to") Дата до
+                    input.form-control#date-to(type="text" data-mask="00/00/0000" placeholder="00/00/0000")
+            .col-md-2
+                .form-group
+                    label.form-label(for="time-to") Время до
+                    input.form-control#time-to(type="text" data-mask="00:00" placeholder="00:00")
+
+        .row.training-center-edit__row
+            .col-md-6
+                .form-group
+                    label.form-label(for="event") Событие
+                    input.form-control#event(type="text" value="Автоматизированное рабочее место (АРМ) врача поликлиники. Новый интерфейс.")
+            .col-md-2
+                .form-group
+                    label.form-label(for="number") Количество участников до
+                    input.form-control#number(type="text" data-mask="00" placeholder="00")
+
+
+        .row.training-center-edit__row
             .col-md-9
-                h3 Редактирование изменения
+                h3.training-center-edit__h3 Анонс
                 #summernote
-                    p Поликлинические случаи лечения
-
-
-                h4 Теги
-                .form-group
-                    label.custom-control.custom-checkbox
-                        input.custom-control-input(type="checkbox" name="" value="" checked)
-                        span.custom-control-label АРМ врача поликлиники
-                .form-group
-                    label.custom-control.custom-checkbox
-                        input.custom-control-input(type="checkbox" name="" value="")
-                        span.custom-control-label АРМ врача стационара
-                .form-group
-                    label.custom-control.custom-checkbox
-                        input.custom-control-input(type="checkbox" name="" value="")
-                        span.custom-control-label АРМ диагностики
-                .form-group
-                    label.custom-control.custom-checkbox
-                        input.custom-control-input(type="checkbox" name="" value="")
-                        span.custom-control-label АРМ лаборанта
-                .form-group
-                    label.custom-control.custom-checkbox
-                        input.custom-control-input(type="checkbox" name="" value="")
-                        span.custom-control-label АРМ медицинского статиста
-                .form-group
-                    label.custom-control.custom-checkbox
-                        input.custom-control-input(type="checkbox" name="" value="")
-                        span.custom-control-label АРМ стоматолога
+                    p
+                        b Темы семинара:
+                    ul
+                        li Электронная  медицинская карта (ЭМК);
+                        li Сигнальная информация о пациенте;
+                        li Постановка диагноза, оформление протокола осмотра в ЭМК;
 
                 hr
 
@@ -97,3 +104,4 @@ nav
                     button.btn.btn-primary.ml-auto(type="submit") Сохранить
 
 script(src="assets/js/app.min.js")
+script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js")

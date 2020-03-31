@@ -6,7 +6,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.15/dist/summernote.min.js"></script>
-  <title>Развитие продуктов | Изменения</title>
+  <title>Учебный центр | Добавить событие</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta charset="UTF-8">
@@ -157,8 +157,8 @@ b, strong {
     <div class="col-md-12 row">
       <div class="nav-actions">
         <ul class="nav nav-tabs border-0 flex-column flex-lg-row">
-          <li class="nav-item"><a class="nav-link active cursor" href="index.html"><i class="fe fe-github"></i>Развитие продуктов</a></li>
-          <li class="nav-item"><a class="nav-link" href="training-center.html"><i class="fe fe-monitor"></i>Учебный центр</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html"><i class="fe fe-github"></i>Развитие продуктов</a></li>
+          <li class="nav-item"><a class="nav-link active cursor" href="training-center.html"><i class="fe fe-monitor"></i>Учебный центр</a></li>
           <li class="nav-item"><a class="nav-link" href="menu.html"><i class="fe fe-list"></i>Меню</a></li>
           <li class="nav-item"><a class="nav-link" href="notification.html"><i class="fe fe-alert-circle"></i>Уведомление</a></li>
           <li class="nav-item"><a class="nav-link" href="auth-header.html"><i class="fe fe-type"></i>Заголовок формы авторизации</a></li>
@@ -170,42 +170,56 @@ b, strong {
 </nav>
 <div class="my-3 my-md-5">
   <div class="container">
-    <div class="row">
+    <div class="row training-center-edit__row">
+      <div class="col-md-2">
+        <div class="form-group">
+          <label class="form-label" for="date-from">Дата с</label>
+          <input class="form-control" id="date-from" type="text" data-mask="00/00/0000" placeholder="00/00/0000">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <label class="form-label" for="time-from">Время с</label>
+          <input class="form-control" id="time-from" type="text" data-mask="00:00" placeholder="00:00">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <label class="form-label" for="date-to">Дата до</label>
+          <input class="form-control" id="date-to" type="text" data-mask="00/00/0000" placeholder="00/00/0000">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <label class="form-label" for="time-to">Время до</label>
+          <input class="form-control" id="time-to" type="text" data-mask="00:00" placeholder="00:00">
+        </div>
+      </div>
+    </div>
+    <div class="row training-center-edit__row">
+      <div class="col-md-6">
+        <div class="form-group">
+          <label class="form-label" for="event">Событие</label>
+          <input class="form-control" id="event" type="text" value="Автоматизированное рабочее место (АРМ) врача поликлиники. Новый интерфейс.">
+        </div>
+      </div>
+      <div class="col-md-2">
+        <div class="form-group">
+          <label class="form-label" for="number">Количество участников до</label>
+          <input class="form-control" id="number" type="text" data-mask="00" placeholder="00">
+        </div>
+      </div>
+    </div>
+    <div class="row training-center-edit__row">
       <div class="col-md-9">
-        <h3>Редактирование изменения</h3>
+        <h3 class="training-center-edit__h3">Анонс</h3>
         <div id="summernote">
-          <p>Поликлинические случаи лечения</p>
-        </div>
-        <h4>Теги</h4>
-        <div class="form-group">
-          <label class="custom-control custom-checkbox">
-            <input class="custom-control-input" type="checkbox" name="" value="" checked><span class="custom-control-label">АРМ врача поликлиники</span>
-          </label>
-        </div>
-        <div class="form-group">
-          <label class="custom-control custom-checkbox">
-            <input class="custom-control-input" type="checkbox" name="" value=""><span class="custom-control-label">АРМ врача стационара</span>
-          </label>
-        </div>
-        <div class="form-group">
-          <label class="custom-control custom-checkbox">
-            <input class="custom-control-input" type="checkbox" name="" value=""><span class="custom-control-label">АРМ диагностики</span>
-          </label>
-        </div>
-        <div class="form-group">
-          <label class="custom-control custom-checkbox">
-            <input class="custom-control-input" type="checkbox" name="" value=""><span class="custom-control-label">АРМ лаборанта</span>
-          </label>
-        </div>
-        <div class="form-group">
-          <label class="custom-control custom-checkbox">
-            <input class="custom-control-input" type="checkbox" name="" value=""><span class="custom-control-label">АРМ медицинского статиста</span>
-          </label>
-        </div>
-        <div class="form-group">
-          <label class="custom-control custom-checkbox">
-            <input class="custom-control-input" type="checkbox" name="" value=""><span class="custom-control-label">АРМ стоматолога</span>
-          </label>
+          <p><b>Темы семинара:</b></p>
+          <ul>
+            <li>Электронная  медицинская карта (ЭМК);</li>
+            <li>Сигнальная информация о пациенте;</li>
+            <li>Постановка диагноза, оформление протокола осмотра в ЭМК;</li>
+          </ul>
         </div>
         <hr>
       </div>
@@ -220,3 +234,4 @@ b, strong {
   </div>
 </div>
 <script src="assets/js/app.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js"></script>

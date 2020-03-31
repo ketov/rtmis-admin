@@ -106,3 +106,27 @@ label{
     cursor: pointer;
     font-weight: normal;
 }
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{
+    color: #0069ec;
+    background-color: #f8fafd;
+    border-color: rgba(0,40,100,.12);
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+.table-responsive--rtmis table .with-b{
+    line-height: 125%;
+    margin: 3px 0 8px 0;
+}
+
+.table-responsive--rtmis .table>caption+thead>tr:first-child>td, 
+.table-responsive--rtmis .table>caption+thead>tr:first-child>th, 
+.table-responsive--rtmis .table>colgroup+thead>tr:first-child>td, 
+.table-responsive--rtmis .table>colgroup+thead>tr:first-child>th, 
+.table-responsive--rtmis .table>thead:first-child>tr:first-child>td, 
+.table-responsive--rtmis .table>thead:first-child>tr:first-child>th{
+    border-bottom: 1px solid #dddddd;
+}

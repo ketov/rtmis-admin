@@ -104,14 +104,68 @@ h2{
                     position: absolute;
                     width: 100%;
                 }
+                p.date{
+                    color: #9aa0ac;
+                    font-size: 85%;
+                    margin-bottom: 2px;
+                    text-transform: uppercase;
+                }
             }
             p{
                 line-height: 135%;
                 margin-bottom: 0;
             }
             td.actions{
-                min-width: 100px;
+                min-width: 120px;
+                padding-top: 16px;
                 text-align: right;
+                .message-button{
+                    background: #007bff;
+                    color: #ffffff;
+                    cursor: pointer;
+                    position: relative;
+                    transition: 0.3s ease;
+                    top: 0;
+                    &:hover{
+                        background: #1485ff;
+                    }
+                    &:active{
+                        top: 1px;
+                    }
+                }
+                .dropdown-item{
+                    margin-left: 4px;
+                }
+                .reg{
+                    color: #007bff;
+                    margin-left: 22px;
+                    margin-right: 8px;
+                    img{
+                        margin-right: 4px;
+                        margin-top: -2px;
+                    }
+                    .number{
+                        color: #A4ADB5;
+                        font-size: 80%;
+                        font-style: italic;
+                        margin-left: 2px;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                    }
+                    &:hover .text{
+                        text-decoration: underline;
+                    }
+                    &:focus {
+                        text-decoration: none;
+                    }
+                }
+            }
+            td.actions.actions--training-center{
+                min-width: 350px;
+            }
+            td.date{
+                min-width: 140px;
             }
             label.custom-control.custom-checkbox{
                 margin-bottom: 3px;
@@ -136,6 +190,37 @@ h2{
                 }
             }
         }
+    }
+}
+
+#popup--summernote {
+    background: #fff;
+    border-radius: 5px;
+    display: none;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -176px;
+    max-width: 400px;
+    padding: 28px 24px;
+    position: fixed;
+    top: 50%;
+    width: 100%;
+    z-index: 5;
+    .note-editor.note-frame.panel.panel-default{
+        margin-bottom: 0;
+    }
+    button.menu-button.btn-primary{
+        width: 100%;
+    }
+}
+
+.training-center-edit{
+    &__h3{
+        margin-bottom: 14px;
+        margin-top: 8px;
+    }
+    &__row{
+        margin-bottom: 12px;
     }
 }
 
@@ -381,6 +466,19 @@ button{
             color: #ffffff;
         }
     }
+}
+
+#training-center-header-label{
+    margin-top: 20px;
+}
+
+#black-bg{
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 @font-face{

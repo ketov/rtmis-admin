@@ -13,6 +13,24 @@ $(document).ready(function () {
         });
     }
 
+    $('.message-button').on('click', function(){
+        $('#black-bg').fadeIn(400);
+        setTimeout(function(){
+            $('#popup--summernote').stop( true, true ).fadeIn(400);
+        }, 450);
+    });
+
+    $(document).click(function (event) {
+        if ($(event.target).closest("#popup--summernote").length || $(event.target).closest(".message-button").length)
+            return;
+        $('#popup--summernote').fadeOut(400);
+
+        setTimeout(function () {
+            $('#black-bg').fadeOut(400);
+        }, 450);
+        event.stopPropagation();
+    });
+
     //$("#phone").mask("+7 (999) 999-99-99", {placeholder: "+7 (000) 000-00-00"})
 
     if ($('#summernote').length > 0){
